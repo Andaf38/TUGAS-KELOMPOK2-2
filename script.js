@@ -18,7 +18,7 @@ function loadData() {
           <td>${row.KEPERLUAN}</td>
           <td>${row.WAKTU}</td>
           <td>
-            <button onclick="editData(${row.ID}, '${row.NAMA}', '${row.INSTANSI}', '${row.KEPERLUAN}', '${row.WAKTU}')">Edit</button>
+            <button onclick="editData('${row.ID}', \`${row.NAMA}\`, \`${row.INSTANSI}\`, \`${row.KEPERLUAN}\`, \`${row.WAKTU}\`)">Edit</button>
             <button onclick="deleteData(${row.ID})">Hapus</button>
           </td>
         `;

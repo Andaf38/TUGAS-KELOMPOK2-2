@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Data Tamu</h1>
+
+  <form id="formData">
+    <input type="hidden" id="ID">
+    <input type="text" id="NAMA" placeholder="NAMA" required>
+    <input type="text" id="INSTANSI" placeholder="INSTANSI" required>
+    <input type="text" id="KEPERLUAN" placeholder="KEPERLUAN" required>
+    <input type="datetime-local" id="WAKTU" required>
+    <button type="submit">Simpan</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nama</th>
+        <th>Instansi</th>
+        <th>Keperluan</th>
+        <th>Waktu</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+    <tbody id="dataBody"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,36 +1,73 @@
 body {
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
   padding: 20px;
-  background-color: #f9f9f9;
 }
 
 h1 {
   text-align: center;
+  color: #1E90FF;
 }
 
 form {
-  margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
 }
 
-form input {
-  padding: 8px;
-  flex: 1 1 200px;
+form input, form button {
+  padding: 10px;
+  border: 1px solid #1E90FF;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
-button {
-  padding: 8px 16px;
+form button {
+  background-color: #1E90FF;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #1c86ee;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 10px;
 }
 
 th, td {
-  border: 1px solid #ccc;
-  padding: 8px;
+  border: 1px solid #ddd;
+  padding: 10px;
   text-align: left;
+}
+
+th {
+  background-color: #1E90FF;
+  color: white;
+}
+
+td button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+td button:first-child {
+  background-color: #4CAF50; /* Edit = Hijau */
+  color: white;
+  margin-right: 5px;
+}
+
+td button:last-child {
+  background-color: #f44336; /* Delete = Merah */
+  color: white;
 }

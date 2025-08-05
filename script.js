@@ -12,14 +12,14 @@ function loadData() {
       data.forEach(row => {
         const tr = document.createElement("tr");
         tr.innerHTML = `
-          <td>${row.NAMA.replace(/'/g, "\\'")}</td>
+          <td>${row.ID}</td>
           <td>${row.NAMA}</td>
           <td>${row.INSTANSI}</td>
           <td>${row.KEPERLUAN}</td>
           <td>${row.WAKTU}</td>
           <td>
             <button onclick="editData('${row.ID}', \`${row.NAMA}\`, \`${row.INSTANSI}\`, \`${row.KEPERLUAN}\`, \`${row.WAKTU}\`)">Edit</button>
-            <button onclick="deleteData(${row.ID})">Hapus</button>
+            <button onclick="deleteData('${row.ID}')">Hapus</button>
           </td>
         `;
         tbody.appendChild(tr);

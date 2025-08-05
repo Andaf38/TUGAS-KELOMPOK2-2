@@ -12,7 +12,7 @@ function loadData() {
       data.forEach(row => {
         const tr = document.createElement("tr");
         tr.innerHTML = `
-          <td>${row.ID}</td>
+          <td>${row.NAMA.replace(/'/g, "\\'")}</td>
           <td>${row.NAMA}</td>
           <td>${row.INSTANSI}</td>
           <td>${row.KEPERLUAN}</td>

@@ -1,5 +1,4 @@
-const API_URL = 'https://script.google.com/macros/s/AKfycbxJOly3WaOQCdDVINNlBayIGYP1LOQYQzXHEEFRKm0xVaqkJbwuZeGndCJjBoph5T1E/exec
-document.addEventListener("DOMContentLoaded", loadData);
+const API_URL = 'https://script.googleusercontent.com/macros/echo?user_content_key=AehSKLizOAu7p-vB1rhFZ1xMukcxNQHYzp-u4klEUvvrnWMIIXJyUjoW3vFUo2nb_Q-3XdnnAweLerhXhylEQ2fv7upKjRQcMtuLPIgsdDqbwUPkInWX6Qs_5mbHkSfA1ExboUVAxQvP_Vmh1GXHMM1Y6zlvdQEsVixVV_0SrRAYqQ01Sf9XqOuaMOjWsOdjQnBth0Uiy0R193eJ7TKOta2guXzAj2oIlOJSR7HCI29Fcr9ViG2EXEQ5dfhkVneSOR5S_xcuA-N30rEp8LEbNdjgQCC1hhLwoA&lib=My__GIgJX_oALaM1h9Gx__AN-YzWt5ix_
 document.getElementById("formData").addEventListener("submit", handleSubmit);
 
 function loadData() {
